@@ -1,3 +1,6 @@
+'use client';
+import testFunction from '@/actions/main';
+
 export default function Navbar() {
    return (
       <nav className='flex flex-col justify-between w-5/6 gap-4 p-4 m-auto place-items-center md:flex-row md:w-3/6'>
@@ -13,6 +16,7 @@ export default function Navbar() {
                Contact
             </li>
          </ul>
+         <button onClick={() => testFunction()}>Click me</button>
       </nav>
    );
 }
