@@ -1,9 +1,10 @@
 import Navbar from '@/components/navbar';
-console.log('test');
+import { Alert } from 'flowbite-react';
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+   return (
+      <>
+         <Navbar />
+         <Alert className='w-4/5 m-auto'>Alert</Alert>
+      </>
+   );
 }
